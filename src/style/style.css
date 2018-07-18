@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gaegu', cursive;
+}
+
+body {
+    background-image: url('./index.png');
+    margin: 0 5px;
+}
+
+header {
+    margin-top: 20px;
+    height: 150px;
+}
+
+header>h1 {
+    text-align: center;
+    background: greenyellow;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 0px 20px;
+    border: 2px solid black;
+    box-shadow: 7px 7px 24px -3px rgba(0, 0, 0, 0.75);
+}
+
+header>ul {
+    margin-top: 50px;
+    background: greenyellow;
+    display: flex;
+    float: left;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 0px 20px;
+    box-shadow: 7px 7px 24px -3px rgba(0, 0, 0, 0.75);
+}
+
+header>ul>li {
+    border-bottom: 1px solid transparent;
+    transition: transform .2s;
+}
+
+header>ul>li:hover {
+    border-bottom: 1px solid black;
+    transform: scale(1.1);
+}
+
+#logged {
+    float: right;
+    margin-top: -40px;
+}
+
+#usernameLogged {
+    background: greenyellow;
+    text-align: center;
+    border-radius: 0px 10px;
+    border: 2px solid black;
+    text-transform: capitalize;
+    box-shadow: 7px 7px 24px -3px rgba(0, 0, 0, 0.75);
+}
+
+#logoutHolder {
+    background: red;
+    margin: 3px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 0px 10px;
+    box-shadow: 7px 7px 24px -3px rgba(0, 0, 0, 0.75);
+    transition: transform .2s;
+}
+
+#logoutHolder:hover {
+    transform: scale(1.1);
+}
+
+#logoutHolder>a {
+    text-decoration: none;
+    color: black;
+}
+
+#profilePicHolder {
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 7px 7px 24px -3px rgba(0, 0, 0, 0.75);
+}
+
+#profilePicHolder>img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#homeHolder {
+    background: greenyellow;
+    width: 800px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 0px 20px;
+    border: 2px solid black;
+    box-shadow: 7px 7px 24px -3px rgba(0, 0, 0, 0.75);
+}
+
+header>ul>li {
+    margin: 5px 10px;
+    list-style: none;
+}
+
+header>ul>li a {
+    text-decoration: none;
+}
+
+.listMovies h1,
+h5 {
+    text-align: center;
+    background: greenyellow;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 0px 20px;
+    box-shadow: 7px 7px 24px -3px rgba(0, 0, 0, 0.75);
+}
+
+.listMovies>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listMovies>div>article {
+    margin: 40px;
+    background: greenyellow;
+    border: 2px solid black;
+    border-radius: 0px 20px;
+}
+
+#movieName {
+    text-align: center;
+    background: #5EC0F9;
+    width: 200px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#movieNameHolder {
+    height: 40px;
+}
+
+#movieName>a {
+    text-decoration: none;
+}
+
+.listMovies>div>article>img {
+    width: 320px;
+    height: 480px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.listMovies>div>article>img:hover {
+    cursor: pointer;
+}
+
+.listMovies>div>article {
+    height: 100%;
+    transition: transform .2s;
+}
+
+.listMovies>div>article:hover {
+    transform: scale(1.05);
+    box-shadow: 7px 7px 24px 3px rgba(0, 0, 0, 0.75);
+}
+
+#commentWrapper {
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    padding-bottom: 20px;
+    height: max-content;
+}
+
+#commentList,
+#noComments {
+    margin-bottom: 3px;
+    background: #5EC0F9;
+    border-radius: 0px 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.commentHeader {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: max-content;
+    margin: 0 auto;
+    background: #5EC0F9;
+}
+
+#commentList>p:first-of-type {
+    border-bottom: 1px solid black;
+    width: 30%;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+#commentList>p:nth-of-type(2) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 5px;
+}
+
+#movieHolder {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: max-content;
+    background: greenyellow;
+    border: 2px solid black;
+    border-radius: 0px 20px;
+    box-shadow: 7px 7px 24px -3px rgba(0, 0, 0, 0.75);
+}
+
+#movieHolder>h3 {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    background: #5EC0F9;
+    padding: 3px;
+    border-bottom-right-radius: 5px;
+    width: max-content;
+}
+
+#movieHolder>p {
+    background: #5EC0F9;
+    width: 400px;
+    margin-left: 238px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-top-left-radius: 5px;
+}
+
+#SubmitionHolder {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#commentPostHolder {
+    width: 300px;
+}
+
+#commentBtn {
+    float: right;
+    position: relative;
+    top: -28px;
+    left: 80px;
+}
+
+.commentInput {
+    border-radius: 0 10px;
+    border: 1px solid black;
+    height: 20px;
+    width: 200px;
+}
+
+#addToFavBtn {
+    position: relative;
+    left: 200px;
+}
+
+.MovieButtons {
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 0 5px;
+    background: #5EC0F9;
+    color: white;
+    font-weight: bold;
+    transition: transform .2s;
+}
+
+.MovieButtons:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.favoriteMovie {
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 0px 20px;
+    width: max-content;
+    background: greenyellow;
+    box-shadow: 7px 7px 24px -3px rgba(0, 0, 0, 0.75);
+    margin-bottom: 20px;
+}
+
+.favoriteMovie h3 {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    background: #5EC0F9;
+    padding: 3px;
+    border-bottom-right-radius: 5px;
+    width: max-content;
+    margin-bottom: 5px;
+}
+
+.changeToWatched {
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 0 5px;
+    background: #5EC0F9;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: transform .2s;
+}
+
+.changeToWatched:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.watchedBtn:disabled {
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 0 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.loginContainer,
+.registerContainer {
+    text-align: center;
+    background: greenyellow;
+    width: max-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 0px 20px;
+    border: 2px solid black;
+    box-shadow: 7px 7px 24px -3px rgba(0, 0, 0, 0.75);
+}
+
+.LoginInput {
+    margin-bottom: 10px;
+    border-radius: 0px 8px;
+    border: 1px solid black;
+    display: inline;
+}
+
+label {
+    display: inline-block;
+    clear: left;
+    width: 120px;
+    text-align: right;
+}
