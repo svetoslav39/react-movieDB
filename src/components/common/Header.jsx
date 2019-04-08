@@ -13,7 +13,7 @@ export default class Header extends Component {
                     {!loggedIn && <li><Link to='/register' activeStyle={{ color: 'red' }}>Register</Link></li>}
                     {isAdmin && <li><Link to='/postMovie' activeStyle={{ color: 'red' }}>Upload movie</Link></li>}
                     {loggedIn && <li><Link to='/dbMovies' activeStyle={{ color: 'red' }}>Database</Link></li>}
-                    {loggedIn && <li><Link to='/favoriteMovies' activeStyle={{ color: 'red' }}>Favorite movies</Link></li>}
+                    {loggedIn && <li><Link to='/favoriteMovies' activeStyle={{ color: 'red' }}>Favorite Movies</Link></li>}
                 </ul>
                 <div id='logged'>
                     {loggedIn && <span>
